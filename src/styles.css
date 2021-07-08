@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-    background-color: rgb(32,33,36);
+html {
+  background: linear-gradient(rgba(32,33,36,.85),rgba(32,33,36,.9)) , url("https://s.reisminer.xyz/bgg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

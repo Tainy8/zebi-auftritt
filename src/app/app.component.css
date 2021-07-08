@@ -1,3 +1,6 @@
+/*
+  Created by Ramon, 8. Juli 2021
+*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 ::ng-deep * {
   color: rgb(232,234,237);
@@ -9,3 +12,4 @@
 ::ng-deep h1{
   font-size: 30px;
 }
+
