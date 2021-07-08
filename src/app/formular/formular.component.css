@@ -1,0 +1,33 @@
+form{
+  display: grid;
+  grid-gap: 10px;
+  justify-content: right;
+  padding-top: 20px;
+  padding-right: 80px
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+input{
+  background-color: rgb(32,33,36);
+  border-color: rgb(138,180,248);
+  border-style: solid;
+  border-radius: 15px;
+  padding: 10px;
+
+}
+
+/*Hide arrows on number input*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
