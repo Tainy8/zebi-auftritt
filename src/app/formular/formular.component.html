@@ -13,19 +13,24 @@
   <label>PLZ</label>
   <input type="number" name="plz" id="plzInput"><br>
   <label>Ort</label>
-  <input type="text" name="ort" id="ortInput">
+  <input type="text" name="ort" id="ortInput"><br>
+
   <label>Schulniveau</label>
-  <div>
+  <div id="formRadios">
+    <label class="container">A
+      <input type="radio" name="niveauRadio">
+      <span class="checkmark"></span>
+    </label>
 
-    <input type="checkbox" name="niveauA" id="checkboxAInput">
-    <label>A</label>
+    <label class="container">B
+      <input type="radio" name="niveauRadio">
+      <span class="checkmark"></span>
+    </label>
 
-    <input type="checkbox" name="niveauB" id="checkboxBInput">
-    <label>B</label>
-
-    <input type="checkbox" name="niveauC" id="checkboxCInput">
-    <label>C</label>
-
+    <label class="container">C
+      <input type="radio" name="niveauRadio">
+      <span class="checkmark"></span>
+    </label>
     <select name="klassenStufe" id="klassenStufeInput">
       <option value="1">1. Klasse</option>
       <option value="2">2. Klassse</option>
@@ -40,14 +45,14 @@
     </select>
   </div>
 
-  <div>
-    <label>Ich akzeptiere die AGB</label>
-    <input type="checkbox" name="agb" id="agbInput">
-  </div>
+  <label class="container2">Ich akzeptiere die <a href="https://new.siemens.com/ch/de/unternehmen/ueber-uns/agb.html">AGB</a>
+    <input type="checkbox">
+    <span class="checkmark2"></span>
+  </label>
 
-  <div>
-    <label>Ich möchte den Siemens Newsletter abonnieren</label>
-    <input type="checkbox" name="newsletter" id="newsletterInput">
-  </div>
+  <label class="container2">Siemens Newsletter abonnieren?
+    <input type="checkbox" >
+    <span class="checkmark2"></span>
+  </label>
   <a (click)="onsubmit()" id="anmeldeBtn">Anmelden</a>
 </form>
