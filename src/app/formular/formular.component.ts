@@ -1,3 +1,7 @@
+/*
+Created by Ramon, Jordan, 8. Juli 2021
+*/
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({

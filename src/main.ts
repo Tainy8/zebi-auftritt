@@ -1,3 +1,6 @@
+/*
+Created by Ramon, Jordan, 8. Juli 2021
+*/
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
