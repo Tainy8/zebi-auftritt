@@ -1,37 +1,37 @@
 <form id="anmeldeForm">
   <h1>Anmeldeformular</h1>
   <label>Username</label>
-  <input type="text" name="username" id="usernameInput"><br>
+  <input type="text" name="username" id="usernameInput" #username><br>
   <label>Name</label>
-  <input type="text" name="name" id="nameInput"><br>
+  <input type="text" name="name" id="nameInput" #name><br>
   <label>Nachname</label>
-  <input type="text" name="nachname" id="nachnameInput"><br>
+  <input type="text" name="nachname" id="nachnameInput" #nachname><br>
   <label>E-mail</label>
-  <input type="email" name="email" id="emailInput"><br>
+  <input type="email" name="email" id="emailInput" #email><br>
   <label>Adresse</label>
-  <input type="text" name="adresseName" id="adresseInput"><br>
+  <input type="text" name="adresseName" id="adresseInput" #adresseName><br>
   <label>PLZ</label>
-  <input type="number" name="plz" id="plzInput"><br>
+  <input type="number" name="plz" id="plzInput" #plz><br>
   <label>Ort</label>
-  <input type="text" name="ort" id="ortInput"><br>
+  <input type="text" name="ort" id="ortInput" #ort><br>
 
   <label>Schulniveau</label>
   <div id="formRadios">
     <label class="container">A
-      <input type="radio" name="niveauRadio">
+      <input type="radio" name="niveauRadio" #niveauA>
       <span class="checkmark"></span>
     </label>
 
     <label class="container">B
-      <input type="radio" name="niveauRadio">
+      <input type="radio" name="niveauRadio" #niveauB>
       <span class="checkmark"></span>
     </label>
 
     <label class="container">C
-      <input type="radio" name="niveauRadio">
+      <input type="radio" name="niveauRadio" #niveauC>
       <span class="checkmark"></span>
     </label>
-    <select name="klassenStufe" id="klassenStufeInput">
+    <select name="klassenStufe" id="klassenStufeInput" #klassenStufe>
       <option value="1">1. Klasse</option>
       <option value="2">2. Klassse</option>
       <option value="3">3. Klasse</option>
@@ -45,14 +45,16 @@
     </select>
   </div>
 
-  <label class="container2">Ich akzeptiere die <a href="https://new.siemens.com/ch/de/unternehmen/ueber-uns/agb.html">AGB</a>
-    <input type="checkbox">
+  <label class="container2">Ich akzeptiere die <a
+      href="https://new.siemens.com/ch/de/unternehmen/ueber-uns/agb.html">AGB</a>
+    <input type="checkbox" #agb>
     <span class="checkmark2"></span>
   </label>
 
   <label class="container2">Siemens Newsletter abonnieren?
-    <input type="checkbox" >
+    <input type="checkbox" #newsletter>
     <span class="checkmark2"></span>
   </label>
-  <a (click)="onsubmit()" id="anmeldeBtn">Anmelden</a>
+  <a (click)="onsubmit(username.value, name.value, nachname.value, email.value, adresseName.value, plz.value, ort.value)"
+    id="anmeldeBtn">Anmelden</a>
 </form>
