@@ -15,7 +15,10 @@ input{
   border-style: solid;
   border-radius: 15px;
   padding: 10px;
+}
 
+input:hover, #anmeldeBtn:hover{
+  border-color: aliceblue;
 }
 
 /*Hide arrows on number input*/
@@ -41,4 +44,10 @@ input[type=number] {
   cursor: pointer;
 }
 
+input:hover, #anmeldeBtn:hover{
+  border-color: aliceblue;
+}
 
+#anmeldeBtn:active{
+  background-color: rgb(54, 56, 61);
+}

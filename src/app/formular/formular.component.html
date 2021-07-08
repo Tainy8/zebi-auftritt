@@ -14,5 +14,40 @@
   <input type="number" name="plz" id="plzInput"><br>
   <label>Ort</label>
   <input type="text" name="ort" id="ortInput">
+  <label>Schulniveau</label>
+  <div>
+
+    <input type="checkbox" name="niveauA" id="checkboxAInput">
+    <label>A</label>
+
+    <input type="checkbox" name="niveauB" id="checkboxBInput">
+    <label>B</label>
+
+    <input type="checkbox" name="niveauC" id="checkboxCInput">
+    <label>C</label>
+
+    <select name="klassenStufe" id="klassenStufeInput">
+      <option value="1">1. Klasse</option>
+      <option value="2">2. Klassse</option>
+      <option value="3">3. Klasse</option>
+      <option value="4">4. Klasse</option>
+      <option value="5">5. Klasse</option>
+      <option value="6">6. Klassse</option>
+      <option value="7">7. Klasse</option>
+      <option value="8">8. Klasse</option>
+      <option value="9">9. Klasse</option>
+      <option value="10">10. Klasse</option>
+    </select>
+  </div>
+
+  <div>
+    <label>Ich akzeptiere die AGB</label>
+    <input type="checkbox" name="agb" id="agbInput">
+  </div>
+
+  <div>
+    <label>Ich möchte den Siemens Newsletter abonnieren</label>
+    <input type="checkbox" name="newsletter" id="newsletterInput">
+  </div>
   <a (click)="onsubmit()" id="anmeldeBtn">Anmelden</a>
 </form>
