@@ -1,0 +1,27 @@
+<!--Created by Ramon, Jordan, 8. Juli 2021-->
+<form id="anmeldeForm">
+  <h1>Anmelde Formular</h1>
+  <app-formfield text="Username" type="text" name="username" #username></app-formfield>
+  <app-formfield text="Vorname" type="text" name="vorname" #vorname></app-formfield>
+  <app-formfield text="Nachname" type="text" name="nachname" #nachname></app-formfield>
+  <app-formfield text="E-Mail" type="email" name="email" #email></app-formfield>
+  <app-formfield text="Adresse" type="text" name="adresse" #adresse></app-formfield>
+  <app-formfield text="PLZ" type="number" name="plz" #plz></app-formfield>
+  <app-formfield text="Ort" type="text" name="ort" #ort></app-formfield>
+  <label>Schulniveau</label>
+  <div class="horizontalGrid">
+<!--    no checked value is unchecked. idk why it doesnt work with false. and for the true ones you can write weird stuff-->
+    <app-formradio text="A" name="niveau" checked="yessss"></app-formradio>
+    <app-formradio text="B" name="niveau" checked=""></app-formradio>
+    <app-formradio text="C" name="niveau" checked=""></app-formradio>
+    <app-klassendropdown></app-klassendropdown>
+  </div>
+  <br>
+  <app-formend #checkboxes></app-formend>
+  <app-formbutton text="Anmelden" id="anmeldeBtn" (click)="validateAndProcess(username.val, vorname.val, nachname.val, email.val, adresse.val, plz.val, ort.val,checkboxes.agbChecked,checkboxes.newsChecked)"></app-formbutton>
+  <ul>
+    <li *ngFor="let msg of errorText">
+      <p class="error-msg">{{msg}}</p>
+    </li>
+  </ul>
+</form>

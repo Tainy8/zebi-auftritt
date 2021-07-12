@@ -1,0 +1,32 @@
+#anmeldeForm{
+  display: grid;
+  grid-gap: 10px;
+  justify-content: right;
+  padding-top: 20px;
+  padding-right: 10%;
+  margin-bottom: 30px;
+}
+app-formfield{
+  display: grid;
+  grid-gap: 5px;
+  justify-content: left;
+}
+h1{
+  font-size: 30px;
+}
+.horizontalGrid{
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-flow: column;
+  justify-content: left;
+  margin-top:10px;
+  align-items: center;
+}
+.error-msg{
+  color: #f56161;
+  word-wrap: anywhere;
+  width: 350px;
+}
+ul{
+  list-style: none;
+}
